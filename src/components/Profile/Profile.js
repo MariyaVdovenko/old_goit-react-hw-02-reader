@@ -38,14 +38,17 @@ const Profile = ({ props }) => {
 };
 
 // Profile.defaultProps = {
-//   alt: 'product image',
+//   user.location: 'unknown',
 // };
 
 // Profile.propTypes = {
 //   user.avatar: PropTypes.string.isRequired,
-//   alt: PropTypes.string,
-//   name: PropTypes.string.isRequired,
-//   price: PropTypes.number.isRequired,
+//   user.name: PropTypes.string,
+//   user.tag: PropTypes.string.isRequired,
+//   user.location: PropTypes.string.isRequired,
+//   user.stats.followers: PropTypes.number.isRequired,
+//   user.stats.views: PropTypes.number.isRequired,
+//   user.stats.likes: PropTypes.number.isRequired,
 // };
 
 export default Profile;
