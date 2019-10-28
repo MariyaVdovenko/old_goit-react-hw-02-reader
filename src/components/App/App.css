@@ -1,3 +1,8 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
 .App {
   background-color: #e7ecf2;
   margin: 0;

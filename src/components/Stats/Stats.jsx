@@ -6,7 +6,7 @@ import './Stats.css';
 const Stats = ({ title, props }) => {
   return (
     <section className="stats-section">
-      <h2 className="title">{title}</h2>
+      {title && <h2 className="title">{title}</h2>}
       <StatsList items={props} />
     </section>
   );
