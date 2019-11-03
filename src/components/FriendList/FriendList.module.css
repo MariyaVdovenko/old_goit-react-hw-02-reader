@@ -1,4 +1,4 @@
-.friend-list {
+.friendList {
   display: flex;
   list-style: none;
   padding: 0;
@@ -6,11 +6,12 @@
   margin: 0;
   flex-direction: column;
   margin: 15px;
+  width: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .friendListItem {
   display: flex;
-  width: 400px;
   height: 115px;
   background-color: #fff;
   align-items: center;
@@ -21,11 +22,13 @@
   height: 23px;
   border-radius: 50%;
   margin: 16px;
-}
-.status-on {
   background-color: #5db34e;
 }
-.status-off {
+.statusOff {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  margin: 16px;
   background-color: #e36356;
 }
 

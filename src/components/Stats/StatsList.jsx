@@ -1,13 +1,14 @@
 import React from 'react';
 import T from 'prop-types';
+import styles from './Stats.module.css';
 
 const StatsList = ({ items }) => {
   return (
-    <ul className="stat-list">
+    <ul className={styles.list}>
       {items.map(item => (
-        <li className="item" key={item.id}>
-          <span className="label">{item.label}</span>
-          <span className="percentage">{item.percentage}%</span>
+        <li className={styles.item} key={item.id}>
+          <span className={styles.label}>{item.label}</span>
+          <span className={styles.percentage}>{item.percentage}%</span>
         </li>
       ))}
     </ul>

@@ -1,13 +1,13 @@
 import React from 'react';
 import T from 'prop-types';
 import StatsList from './StatsList';
-import './Stats.css';
+import styles from './Stats.module.css';
 
-const Stats = ({ title, props }) => {
+const Stats = ({ title, stats }) => {
   return (
-    <section className="stats-section">
-      {title && <h2 className="title">{title}</h2>}
-      <StatsList items={props} />
+    <section className={styles.section}>
+      {title && <h2 className={styles.title}>{title}</h2>}
+      <StatsList items={stats} />
     </section>
   );
 };

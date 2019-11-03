@@ -1,31 +1,30 @@
 import React from 'react';
-// import T from 'prop-types';
+import styles from './FriendList.module.css';
+import T from 'prop-types';
 
 const FriendListItem = ({ friend }) => {
-  const id = friend.id;
   const avatar = friend.avatar;
   const name = friend.name;
   const isOnline = friend.isOnline;
   return (
-    <li className="friendListItem" key={id}>
+    <li className={styles.friendListItem}>
       {isOnline ? (
-        <span className="status status-on"></span>
+        <span className={styles.status}></span>
       ) : (
-        <span className="status status-off"></span>
+        <span className={styles.statusOff}></span>
       )}
-      <img className="avatar" src={avatar} alt="" width="96" />
-      <p className="name">{name}</p>
+      <img className={styles.avatar} src={avatar} alt="" width="96" />
+      <p className={styles.name}>{name}</p>
     </li>
   );
 };
 
-// FriendListItem.defaultProps = {};
-
-// FriendListItem.propTypes = {
-//   id: T.number.isRequired,
-//   avatar: T.string,
-//   name: T.string.isRequired,
-//   isOnline: T.bool.isRequired,
-// };
+FriendListItem.propTypes = {
+  friend: T.shape({
+    avatar: T.string.isRequired,
+    name: T.string,
+    isOnline: T.bool.isRequired,
+  }),
+};
 
 export default FriendListItem;

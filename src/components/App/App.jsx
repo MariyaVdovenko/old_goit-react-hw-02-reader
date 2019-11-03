@@ -5,13 +5,16 @@ import user from '../../user.json';
 import stats from '../../statsData';
 import FriendList from '../FriendList/FriendList';
 import friends from '../FriendList/friends.json';
-import './App.css';
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
+import transactions from '../TransactionHistory/transactions.json';
+import styles from './App.module.css';
 
 const App = () => (
-  <div className="App">
-    <Profile props={user} />
-    <Stats title="Upload stats" props={stats} />
+  <div className={styles.App}>
+    <Profile user={user} />
+    <Stats title="Upload stats" stats={stats} />
     <FriendList friends={friends} />
+    <TransactionHistory items={transactions} />
   </div>
 );
 

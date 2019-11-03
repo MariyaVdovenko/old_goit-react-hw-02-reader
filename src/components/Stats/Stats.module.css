@@ -1,9 +1,7 @@
-.stats-section {
+.section {
   width: 268px;
-
+  margin-left: 15px;
   background-color: #fff;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 15px;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -16,7 +14,7 @@
   font-weight: bold;
 }
 
-.stat-list {
+.list {
   display: flex;
   list-style: none;
   padding: 0;
