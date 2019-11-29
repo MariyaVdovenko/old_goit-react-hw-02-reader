@@ -1,11 +1,11 @@
 {
-  "name": "goit-react-hw-01-components",
+  "name": "goit-react-hw-02-reader",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.1.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"
   },
   "scripts": {
@@ -16,7 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://MariyaVdovenko.github.io/goit-react-hw-01-components",
+  "homepage": "https://MariyaVdovenko.github.io/goit-react-hw-02-reader",
   "eslintConfig": {
     "extends": "react-app"
   },
